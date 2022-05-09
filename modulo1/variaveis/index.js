@@ -36,21 +36,17 @@ console.log(typeof nome, typeof idade);
 
 //variável idade é tipo string, uma vez que o prompt sempre retorna uma string. O uso do Number() seria uma alternativa.
 
-console.log("Olá", nome, "você tem", idade, "anos.");
+console.log(`Olá ${nome}, você tem ${idade} anos.`);
 
 //-------Exercício 2-------
 
-let pergunta1 = "Você está usando roupa preta hoje? ";
-let pergunta2 = "Você está usando tênis hoje? ";
-let pergunta3 = "Você está na sua casa? ";
+let pergunta1 = prompt("Você está usando roupa preta hoje? ");
+let pergunta2 = prompt("Você está usando tênis hoje? ");
+let pergunta3 = prompt("Você está na sua casa? ");
 
-let resposta1 = "Sim";
-let resposta2 = "Não";
-let resposta3 = "Sim";
-
-console.log(pergunta1, "-", resposta1);
-console.log(pergunta2, "-", resposta2);
-console.log(pergunta3, "-", resposta3);
+console.log(`Você está usando roupa preta hoje? - ${pergunta1}`);
+console.log(`Você está usando tênis hoje? - ${pergunta2}`);
+console.log(`Você está na sua casa? - ${pergunta3}`);
 
 //-------Exercício 3-------
 
@@ -62,8 +58,8 @@ let c = 10;
 a = b;
 b = c;
 
-console.log("O novo valor de a é:", a);
-console.log("O novo valor de b é:", b);
+console.log(`O novo valor de a é: ${a}`);
+console.log(`O novo valor de b é: ${b}`);
 
 //---------------------------Desafio-------------------------------
 
