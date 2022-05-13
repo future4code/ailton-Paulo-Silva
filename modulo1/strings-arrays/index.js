@@ -2,7 +2,7 @@
 
 -------Exercício 1-------
 
--Indique todas as mensagens impressas no console, SEM EXECUTAR o programa.
+Indique todas as mensagens impressas no console, SEM EXECUTAR o programa.
   let array
   console.log('a. ', array)
 
@@ -108,7 +108,7 @@ console.log(listaDeTarefas);
 
 removerItem = prompt("Digite o índice de uma terefa (0, 1 ou 2): ");
 
-listaDeTarefas.pop(removerItem);
+listaDeTarefas.splice(removerItem, 1);
 
 console.log(listaDeTarefas);
 
