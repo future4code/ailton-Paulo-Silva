@@ -76,8 +76,13 @@ espelha o objeto
 a. O que vai ser impresso no console?
 -Resposta:
 
+false
+
 b. Explique o valor impresso no console. Você sabe por que isso aconteceu?
 -Resposta:
+
+O "false" foi impresso, pois é o valor da propriedade backender. Já o valor de "altura" não foi impresso, pois a propriedade "pessoa" não foi definida.
+
 
 //-----------------------Exercícios de escrita de código-----------------------
 
@@ -275,6 +280,8 @@ filmes();
 
 function controleDeEstoque(obj) {
   obj.disponibilidade = !obj.disponibilidade;
+  return obj.disponibilidade;
 }
+
 controleDeEstoque(fruta2);
 console.log(carrinho);
