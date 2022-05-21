@@ -1,6 +1,6 @@
 console.log("Boas vindas ao jogo de Blackjack!");
 
-if (confirm("Quer iniciar uma nova rodada?")) {
+if (confirm("Deseja iniciar uma nova rodada?")) {
   const cartasUsuario = {
     primeraCarta: comprarCarta(),
     segundaCarta: comprarCarta(),
@@ -9,6 +9,10 @@ if (confirm("Quer iniciar uma nova rodada?")) {
     primeraCarta: comprarCarta(),
     segundaCarta: comprarCarta(),
   };
+  const subtracaoPontuacoes =
+    cartasUsuario.primeraCarta.valor +
+    cartasUsuario.segundaCarta.valor -
+    (cartasComputador.primeraCarta.valor + cartasComputador.segundaCarta.valor);
 
   console.log(`Usuário - cartas: ${cartasUsuario.primeraCarta.texto} ${
     cartasUsuario.segundaCarta.texto
@@ -21,15 +25,10 @@ Computador - cartas: ${cartasComputador.primeraCarta.texto} ${
     cartasComputador.primeraCarta.valor + cartasComputador.segundaCarta.valor
   }
    `);
-  if (
-    cartasUsuario.primeraCarta.valor + cartasUsuario.segundaCarta.valor ===
-    cartasComputador.primeraCarta.valor + cartasComputador.segundaCarta.valor
-  ) {
+
+  if (subtracaoPontuacoes === 0) {
     console.log("Empate!");
-  } else if (
-    cartasUsuario.primeraCarta.valor + cartasUsuario.segundaCarta.valor >
-    cartasComputador.primeraCarta.valor + cartasComputador.segundaCarta.valor
-  ) {
+  } else if (subtracaoPontuacoes > 0) {
     console.log("O usuário ganhou!");
   } else {
     console.log("O computador ganhou!");
