@@ -1,6 +1,6 @@
-/** 
+/**
   *
-  *  ESTILOS GERAIS 
+  *  ESTILOS GERAIS
   *
   **/
 
@@ -20,7 +20,6 @@ input {
     height: 20px;
     width: 500px;
 }
-
 button:focus {
     color: white;
 }
@@ -60,9 +59,9 @@ div img {
 }
 
 
-/** 
+/**
   *
-  *  ESTILOS HOME 
+  *  ESTILOS HOME
   *
   **/
 
@@ -88,7 +87,7 @@ div img {
 
 /**
   *
-  *  ESTILOS COMPRAR 
+  *  ESTILOS COMPRAR
   *
   **/
 
