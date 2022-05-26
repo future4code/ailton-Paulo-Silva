@@ -5,20 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Controle de Estoque</title>
+    <link rel="stylesheet" type="text/css" href="ctrl-estoque.css">
   </head>
   <body>
     <header>
-      <p>TechBuy</p>
+      <h1>TechBuy!</h1>
+      <p>Maior loja de eletrônicos do Lisarb.</p>
+      <div id="caixa-de-busca">
+        <input type="text" placeholder=" Busque aqui" id="caixa-busca">
+        <input type="submit"  id="botao-submit" value="Buscar">
+      </div>
     </header>
 
-    <nav>
+    <nav id="navegacao">
       <a href="index.html">Página Inicial |</a>
       <a href="ctrl-estoque.html">Controle de Estoque |</a>
       <a href="add-produto.html">Adicionar Produto |</a>
       <a href="funcionarios.html">Funcionários</a>
     </nav>
-
-    <h2>Controle de Estoque</h2>
+    <main>
+    <div id="table">
+      <h2>Controle de Estoque</h2>
 
     <table>
       <tr>
@@ -96,9 +103,21 @@
           />
         </td>
         <td>Mouse Pad Gamer Speed Mpg101 Preto Fortrek</td>
-        <td>R$ 15,990</td>
+        <td>R$ 15,90</td>
         <td>34</td>
       </tr>
     </table>
+  </div>
+</main>
+    <footer>
+      <div id="redes-sociais">
+      <p>Siga-nos nas redes sociais!</p>
+      <a href=""><img src="img/instagram.png" width="30px" /></a>
+      <a href=""><img src="img/whatsapp.png" width="30px" /></a>
+      <a href=""><img src="img/telegram.png" width="30px" /></a>
+    </div>
+      <p id="textopequeno">TechBuy® é uma marca registrada de TECHBUY COMÉRCIO ELETRÔNICO S/A | CNPJ: 00.000.000/0000-00 | Todos os direitos reservados. Os preços anunciados neste site ou via e-mail promocional podem ser alterados sem prévio aviso.
+        A TechBuy não é responsável por erros descritivos. As fotos contidas nesta página são meramente ilustrativas do produto e podem variar de acordo com o fornecedor/lote do fabricante. Este site trabalha 100% em criptografia SSL. <a href="">Clique aqui e veja as políticas de nossa empresa.</a></p>
+    </footer>
   </body>
 </html>
