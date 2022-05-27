@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+  font-family: Poppins, sans-serif !important;
+  text-decoration: none;
+}
+
+body{
+  background-color: rgb(11, 44, 109);
+}
+
+header{
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  font-size: 17px;
+
+}
+
+header p{
+  margin-right: 27%;
+  margin-left: 5px;
+  margin-top: 12px;
+}
+
+input{
+  font-size: 15px;
+  font-family: sans-serif;
+  border-radius: 3px;
+}
+
+#caixa-busca{
+  width: 300px;
+  height: 30px;
+
+}
+
+#botao-submit{
+  background-color: #FF6500;
+  color: white;
+  border: none;
+  height:25px;
+}
+
+#botao-submit:hover{
+  background-color: #de5900;
+}
+
+a{
+  color: white;
+}
+
+footer{
+  color: white;}
+
+#navegacao{
+  text-align: center;
+  background-color: #FF6500;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+main{
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+
+}
+
+h2{
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+
+form{
+  margin-left: 30%;
+  text-align: left;
+}
+
+form input{
+  margin: 4px;
+  font-size: 20px;
+}
+
+form label{
+  font-size: 18px;
+}
+
+form #link-foto{
+  width: 350px;
+}
+
+form #descricao{
+ width: 287px;
+}
+
+form #preco{
+  width: 341px;
+}
+
+form #quantidade{
+  width: 279px;
+}
+
+button{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#redes-sociais{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #FF6500;
+  font-size: 17px;
+  color: white;
+
+}
+#redes-sociais a {
+  margin-left: 8px;
+}
+
+footer #textopequeno{
+  margin-top:25px;
+  margin-bottom: -20px;
+  font-size: 10px;
+  margin-left: 182px;
+  margin-right: 182px;
+}

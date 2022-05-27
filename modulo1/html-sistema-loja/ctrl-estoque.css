@@ -1,0 +1,119 @@
+* {
+  margin: 0px;
+  font-family: Poppins, sans-serif !important;
+  text-decoration: none;
+}
+
+body{
+  background-color: rgb(11, 44, 109);
+}
+
+header{
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  font-size: 17px;
+
+}
+
+header p{
+  margin-right: 27%;
+  margin-left: 5px;
+  margin-top: 12px;
+}
+
+input{
+  font-size: 15px;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 3px;
+}
+
+#caixa-busca{
+  width: 300px;
+  height: 30px;
+
+}
+
+#botao-submit{
+  background-color: #FF6500;
+  color: white;
+  border: none;
+  height:25px;
+}
+
+#botao-submit:hover{
+  background-color: #de5900;
+}
+
+a{
+  color: white;
+}
+
+footer{
+  color: white;}
+
+#navegacao{
+  text-align: center;
+  background-color: #FF6500;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+
+}
+
+main{
+  padding: 50px;
+  background-color: white;
+
+}
+
+#table{
+  text-align: center;
+  margin: auto;
+  width: 50%
+}
+
+table, th, td {
+  padding: 10px;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+#table h2{
+  margin-bottom: 30px;
+  margin-top: -10px
+}
+
+footer{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#redes-sociais{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #FF6500;
+  font-size: 17px;
+  color: white;
+
+}
+
+#redes-sociais a {
+  margin-left: 8px;
+}
+
+footer #textopequeno{
+  margin-top:25px;
+  margin-bottom: -20px;
+  font-size: 10px;
+  margin-left: 182px;
+  margin-right: 182px;
+}
