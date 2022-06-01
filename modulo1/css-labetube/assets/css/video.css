@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+
+header>div {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #EF843A;
+  align-items: center;
+  padding-inline: 20px;
+  flex-wrap: wrap;
+}
+
+header>div>input {
+  height: 1.5rem;
+  width: 10rem;
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+main p {
+  font-size: 25px;
+  font-weight: 600;
+  padding-block: 20px;
+}
+
+footer {
+  background-color: #323B3E;
+  color: white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: white;
+}
