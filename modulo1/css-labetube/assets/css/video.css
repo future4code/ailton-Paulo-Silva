@@ -5,43 +5,109 @@
   color: black;
 }
 
+header {
+  width: 100%;
+  height: 60px;
+}
+
 header>div {
-  height: 70px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #EF843A;
   align-items: center;
-  padding-inline: 20px;
+  padding-inline: 1%;
   flex-wrap: wrap;
 }
 
 header>div>input {
+  margin-left: 10px;
   height: 1.5rem;
   width: 10rem;
 }
 
-
 main {
+  margin-block: 1.8%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding-bottom: 40px;
+
+  margin-left: 30px;
 }
+
+
 
 main p {
   font-size: 25px;
   font-weight: 600;
-  padding-block: 20px;
+  padding-bottom: 1%;
+  width: 80%;
+}
+
+
+main>div {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding-top: 20px;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+main iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
 }
 
 footer {
   background-color: #323B3E;
-  color: white;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-inline: 10px;
+  width: 100%;
 }
 
-footer a {
+footer p {
   color: white;
+}
+
+
+@media screen and (max-width: 480px) {
+  header div {
+    padding-inline: 14px;
+  }
+
+  footer {
+    padding-inline: 0px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+
+  header {
+    height: 90px;
+  }
+
+  main p {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+
+  header div {
+    justify-content: center;
+  }
 }

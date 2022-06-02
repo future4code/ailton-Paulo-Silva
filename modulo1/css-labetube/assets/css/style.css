@@ -5,45 +5,52 @@
   color: black;
 }
 
+header {
+  width: 100%;
+  height: 60px;
+}
+
 header>div {
-  height: 70px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #EF843A;
   align-items: center;
-  padding-inline: 20px;
+  padding-inline: 1%;
   flex-wrap: wrap;
 }
 
 header>div>input {
+  margin-left: 10px;
   height: 1.5rem;
   width: 10rem;
 }
 
 
 main {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 350px);
-  grid-template-rows: repeat(3);
-  grid-gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 
 }
 
 main img {
-  width: 350px;
-  height: 240px;
+  width: 100%;
+  height: 255px;
 }
 
 main div {
   width: 350px;
   border: 2px solid #EF843A;
+  margin: 15px;
 }
 
 main p {
-  padding-block: 20px;
+  display: flex;
+  padding-block: 5%;
   font-size: 20px;
   margin-left: 5px;
 }
@@ -56,13 +63,43 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-footer a {
-  color: white;
+  text-align: center;
 }
 
 #container {
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+
+@media screen and (max-width: 480px) {
+  header div {
+    padding-inline: 14px;
+  }
+
+  main {
+    padding: 0px;
+    justify-content: center;
+  }
+
+  main img {
+    width: 100%;
+    height: 80%;
+  }
+
+  footer {
+    height: 8rem;
+    ;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  header {
+    height: 90px;
+  }
+
+  header div {
+    justify-content: center;
+  }
 }
