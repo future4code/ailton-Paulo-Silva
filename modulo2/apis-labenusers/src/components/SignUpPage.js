@@ -4,16 +4,16 @@ import axios from "axios";
 class SignUpPage extends React.Component {
   state = {
     name: "",
-    email: ""
+    email: "",
   };
 
-  handleNameChange = event => {
+  handleNameChange = (event) => {
     const newNameValue = event.target.value;
 
     this.setState({ name: newNameValue });
   };
 
-  handleEmailChange = event => {
+  handleEmailChange = (event) => {
     const newEmailValue = event.target.value;
 
     this.setState({ email: newEmailValue });
@@ -22,13 +22,13 @@ class SignUpPage extends React.Component {
   handleCreateUser = () => {
     const axiosConfig = {
       headers: {
-        Authorization: "severo"
-      }
+        Authorization: "severo",
+      },
     };
 
     const body = {
       name: this.state.name,
-      email: this.state.email
+      email: this.state.email,
     };
 
     axios
@@ -41,7 +41,7 @@ class SignUpPage extends React.Component {
         alert(`Usuário ${this.state.name} criado com sucesso!`);
         this.setState({ name: "", email: "" });
       })
-      .catch(error => {
+      .catch((error) => {
         alert("Erro ao criar o usuário");
         console.log(error);
       });

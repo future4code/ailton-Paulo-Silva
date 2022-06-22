@@ -38,20 +38,20 @@ class Users extends React.Component {
   };
 
   handleUserDeletion = (userId) => {
-    // if (confirm("Tem certeza que deseja apagar o usuário?")) {
-    //   axios
-    //     .delete(
-    //       `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${userId}`,
-    //       axiosConfig
-    //     )
-    //     .then(() => {
-    //       alert("Usuário apagado com sucesso!");
-    //       this.fetchUsersList();
-    //     })
-    //     .catch(e => {
-    //       alert("ERRO AO APAGAR USUARIO");
-    //     });
-    // }
+    if (window.confirm("Tem certeza que deseja apagar o usuário?")) {
+      axios
+        .delete(
+          `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${userId}`,
+          axiosConfig
+        )
+        .then(() => {
+          alert("Usuário apagado com sucesso!");
+          this.fetchUsersList();
+        })
+        .catch((e) => {
+          alert("ERRO AO APAGAR USUARIO");
+        });
+    }
   };
 
   changePage = (userId) => {

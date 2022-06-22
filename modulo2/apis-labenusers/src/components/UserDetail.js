@@ -4,8 +4,8 @@ import axios from "axios";
 
 const axiosConfig = {
   headers: {
-    Authorization: "severo"
-  }
+    Authorization: "severo",
+  },
 };
 
 class UserDetail extends React.Component {
@@ -13,7 +13,7 @@ class UserDetail extends React.Component {
     userDetail: {},
     userEdition: "editButton",
     name: "",
-    email: ""
+    email: "",
   };
 
   componentDidMount() {
@@ -23,15 +23,13 @@ class UserDetail extends React.Component {
   getUserDetail = () => {
     axios
       .get(
-        `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${
-          this.props.userId
-        }`,
+        `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${this.props.userId}`,
         axiosConfig
       )
-      .then(response => {
+      .then((response) => {
         this.setState({ userDetail: response.data });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   };
@@ -44,13 +42,13 @@ class UserDetail extends React.Component {
     }
   };
 
-  handleNameChange = event => {
+  handleNameChange = (event) => {
     const newNameValue = event.target.value;
 
     this.setState({ name: newNameValue });
   };
 
-  handleEmailChange = event => {
+  handleEmailChange = (event) => {
     const newEmailValue = event.target.value;
 
     this.setState({ email: newEmailValue });
@@ -59,14 +57,12 @@ class UserDetail extends React.Component {
   handleCreateUser = () => {
     const body = {
       name: this.state.name,
-      email: this.state.email
+      email: this.state.email,
     };
 
     axios
       .put(
-        `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${
-          this.props.userId
-        }`,
+        `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${this.props.userId}`,
         body,
         axiosConfig
       )
@@ -76,7 +72,7 @@ class UserDetail extends React.Component {
         this.changeUserEditionFiel();
         alert(`Usuário ${this.state.name} editado com sucesso!`);
       })
-      .catch(error => {
+      .catch((error) => {
         alert("Erro ao criar o usuário");
         console.log(error);
       });

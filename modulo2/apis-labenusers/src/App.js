@@ -4,7 +4,7 @@ import Users from "./components/Users";
 
 export default class App extends React.Component {
   state = {
-    currentPage: "signUp"
+    currentPage: "signUp",
   };
 
   changePage = () => {
