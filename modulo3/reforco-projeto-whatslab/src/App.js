@@ -13,11 +13,15 @@ const MainContainer = styled.div`
   width: 40vw;
   border: 1px solid gray;
   min-height: 100vh;
-  background-color: aliceblue;
+  background-color: #d1ffd4;
+`;
+
+const H1 = styled.h1`
+  color: #00af0a;
 `;
 
 const DivMensagens = styled.div`
-  min-height: 95vh;
+  min-height: 85vh;
 `;
 
 const FormContainer = styled.div`
@@ -39,6 +43,10 @@ const InputMensagem = styled.input`
 
 const Button = styled.button`
   width: 10%;
+  background-color: #00d20e;
+  border: none;
+  padding: 3px;
+  cursor: pointer;
 `;
 class App extends React.Component {
   state = {
@@ -80,6 +88,7 @@ class App extends React.Component {
 
     return (
       <MainContainer>
+        <H1>WhatsLab</H1>
         <DivMensagens>{componentesMsg}</DivMensagens>
         <FormContainer>
           <InputUsuario
