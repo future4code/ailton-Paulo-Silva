@@ -1,24 +1,46 @@
 import express, { Express } from "express";
-import knex from "knex";
 import cors from "cors";
-import dotenv from "dotenv";
 import { AddressInfo } from "net";
-dotenv.config();
-
-export const connection = knex({
-  client: "mysql",
-  connection: {
-    port: 3306,
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
-  },
-});
+import createUser from "./endpoints/createUser";
+import getUsers from "./endpoints/getUsers";
+import createProducts from "./endpoints/createProducts";
+import getProducts from "./endpoints/getProducts";
+import createPurchases from "./endpoints/createPurchases";
+import getPurchasesByUser from "./endpoints/getPurchasesByUser";
+import getProductsByOrder from "./endpoints/getProductsByOrder";
+import getProductsBySearch from "./endpoints/getProductsBySearch";
+import getUserWithPurchases from "./endpoints/getUserWithPurchases";
 
 const app: Express = express();
 app.use(express.json());
 app.use(cors());
+
+// Cadastrar Usuario
+app.post("/user", createUser);
+
+// Busca por todos os usuários
+app.get("/users", getUsers);
+
+// Cadastro de produto
+app.post("/products", createProducts);
+
+// Busca por todos os produtos
+app.get("/products", getProducts);
+
+// Registro de compra
+app.post("/purchases", createPurchases);
+
+// Busca das compras de um usuário
+app.get("/users/:userId/purchases", getPurchasesByUser);
+
+// Busca por todos os produtos por ORDER
+app.get("/products-order", getProductsByOrder);
+
+// Busca por todos os produtos por SEARCH
+app.get("/products-search", getProductsBySearch);
+
+// Busca por todos os usuários e suas compras
+app.get("/user-with-purchases", getUserWithPurchases);
 
 const server = app.listen(process.env.PORT || 3003, () => {
   if (server) {
