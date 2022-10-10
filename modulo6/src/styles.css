@@ -11,12 +11,11 @@
   justify-content: center;
   background-image: url("./assets/imgs/background.png");
   background-repeat: no-repeat;
-  /* background-size: contain; */
   background-position: center;
   background-attachment: fixed;
   color: white;
 }
 
-.App h1 {
-  /* color: #C6C62F */
+* {
+  user-select: none;
 }

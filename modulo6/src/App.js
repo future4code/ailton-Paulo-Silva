@@ -6,7 +6,6 @@ import OneCard from "./pages/OneCard/OneCard";
 
 export default function App() {
   const [page, setPage] = useState("Initial");
-  // const [page, setPage] = useState("Cards");
 
   return (
     <div className="App">

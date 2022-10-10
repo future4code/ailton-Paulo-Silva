@@ -4,4 +4,18 @@
   height: 600px;
   border-radius: 25px;
   margin-bottom: 10vh;
+  transition: 0.3s;
+
+}
+
+.div-one-card:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+.div-one-card p {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 17px;
 }

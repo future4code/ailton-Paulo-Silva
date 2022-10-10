@@ -35,3 +35,8 @@
   margin-top: 20px;
   font-weight: bolder;
 }
+
+
+.div-welcome button:hover {
+  background-color: #59141a;
+}

@@ -7,6 +7,12 @@
   margin-block: 10px;
   padding-bottom: 15px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.div-card:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
 }
 
 .div-card img {

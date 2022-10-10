@@ -9,7 +9,7 @@ export default function Initial(props) {
     <div className="div-body">
       <div className="div-welcome">
         <h1>Boas vindas ao Jogo de Tarot!</h1>
-        <p>Jogue a cartas e encontre a resposta para a sua questão!</p>
+        <p>Jogue as cartas e encontre a resposta para a sua questão!</p>
         <button onClick={changeToCards}>Ir para o jogo</button>
       </div>
     </div>
