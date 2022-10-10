@@ -8,10 +8,9 @@ export default function AllCards(props) {
 
   return (
     <div>
-      <div className="div-button">
+      <div className="div-button-out">
         <button onClick={changeToInitial}>Sair do jogo</button>
       </div>
-      <h1>TAROT</h1>
       <Cards />
     </div>
   );
