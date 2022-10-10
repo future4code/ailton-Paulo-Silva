@@ -1,0 +1,22 @@
+.div-button-out {
+  width: 100%;
+  height: 40px;
+  text-align: start;
+}
+
+.div-button-out button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  background-color: #030a21;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.div-button-out button:hover {
+  background-color: #01030A;
+}

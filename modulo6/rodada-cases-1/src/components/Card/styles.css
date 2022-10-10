@@ -1,0 +1,27 @@
+.div-card {
+  background-color: #65191D;
+  width: 240px;
+  height: 400px;
+  border-radius: 15px;
+  margin-inline: 15px;
+  margin-block: 10px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.div-card:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.div-card img {
+  width: 162px;
+  height: 341px;
+}
+
+.div-card h2 {
+  font-size: 15px;
+  color: white;
+  font-weight: bolder;
+}
